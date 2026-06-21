@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #dde3ec;
+    background: linear-gradient(135deg, #355384, #9ebfc2);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,24 +32,41 @@ main {
 }
 
 form {
-    background-color: white;
+    /* background-color: rgb(233, 232, 232); */
     padding: 30px;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #0e2341;
+    color: #eff2f7;
+}
+
+h2::first-letter {
+    color: #25c7eb;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style:italic;
+}
+
+::selection {
+    background-color: #000000;
+    color: #12a1ed;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #fefefe;
 }
 
 input[type="email"],
@@ -57,16 +74,26 @@ input[type="password"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #e8e7ec;
+    border-radius: 7px;
     font-size: 15px;
 }
 
 input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #4a0de7;
+    border-width: 1.5px;
 }
+
+input::placeholder {
+    color: #2f2c6596;
+}
+
+/* input:focus::placeholder {
+    color: transparent;
+} */
+
 
 input[type="submit"] {
     width: 100%;
@@ -78,6 +105,7 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.6s ease, color 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -92,11 +120,11 @@ form p {
 
 form a {
     text-decoration: none;
-    color: #2563eb;
+    color: #f1f1f3;
 }
 
 form a:hover {
-    color: #c21dc8;
+    color: #371dc8;
     text-decoration: underline;
 }
 
