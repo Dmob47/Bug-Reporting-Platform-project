@@ -48,6 +48,11 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #eff2f7;
+    border-width: thick;
+    border-color: black;
+    border-style: dashed;
+    border-left-color: #ed1212;
+    border-left-width: 50px;
 }
 
 h2::first-letter {
@@ -147,4 +152,87 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* REPORT PAGE */
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #e8e7ec;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a0de7;
+    border-width: 1.5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: Arial, sans-serif;
+}
+
+/* REPORT PAGE LINK */
+
+main > a {
+    color: #f1f1f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main > a:hover {
+    color: #371dc8;
+    text-decoration: underline;
+}
+
+/* BUG TABLE PAGE */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,0.95);
+}
+
+th {
+    background-color: #1f2937;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dbeafe;
+}
+
+/* TABLE PAGE LINK */
+
+body > a {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    color: #f1f1f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body > a:hover {
+    color: #371dc8;
 }
