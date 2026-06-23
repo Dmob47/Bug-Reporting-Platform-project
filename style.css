@@ -53,6 +53,9 @@ h2 {
     border-style: dashed;
     border-left-color: #ed1212;
     border-left-width: 50px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
 }
 
 h2::first-letter {
