@@ -1,0 +1,40 @@
+section {
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+}
+
+div{
+    background-color: red;
+    width: 20%;
+    height: 30%;
+}
+
+h1 {
+    color: rgb(18, 3, 3);
+    text-align: center;
+    font-size: 40px;
+    border: 1px solid #1fbef7;
+    line-height: 200%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+article {
+    font-size: 20px;
+}
+
+div{
+    background-color: olive;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    display: inline-block;
+    margin: 20px;
+}
